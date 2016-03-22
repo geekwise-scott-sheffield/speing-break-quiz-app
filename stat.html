@@ -7,31 +7,33 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
         <script src="js/script.js"></script>
     </head>
+
     <body>
 
-    <!--container for first two of four possible answers to given question-->
+    <!--container for subject and score-->
     <section class="row">
         <!--option 1 container-->
-        <div class="col s4 offset-s1  left answerOpts" id="answer-1">
+        <div class="col s4 offset-s1  left answerOpts" id="statPage-subject">
             <p>SUBJECT</p>
-            <button class="hoverable button">click me!!</button>
+            <button class="hoverable button">economics and sadness</button>
         </div>
         <!--option 2 container-->
-        <div class="col s4 pull-s1 right answerOpts" id="answer-2">
+        <div class="col s4 pull-s1 right answerOpts" id="statPage-score">
             <p>SCORE</p>
-            <button class="hoverable button">click me!!</button>
+            <button class="hoverable button"><b>#</b> out of 5</button>
         </div>
     </section>
 
     <!--container for last two of four possible answers to given question-->
     <section class="row">
         <!--option 3 container-->
-        <div class="col s4 offset-s4 left answerOpts" id="answer-3">
+        <div class="col s4 offset-s4 left answerOpts" id="statPage-pass">
             <p>PASS OR FAIL</p>
-            <button class="hoverable button">click me!!</button>
+            <button class="hoverable button">pass || fail</button>
         </div>
     </section>
 
+    <!--bottom area that takes the user back to the beginning of the quiz-->
     <footer class="row">
         <div id="footerContent" class="col s12">
             <a href="index.html"><h1>return to quiz start</h1></a>
