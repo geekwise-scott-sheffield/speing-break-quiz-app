@@ -7,9 +7,55 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
         <script src="js/script.js"></script>
     </head>
-
     <body>
+        <!--statistics section, non interactive with user-->
+            <nav class="row">
+                <!--subject the user is being questioned on-->
+                <div class="col s6" id="subject">
+                    <span>SUBJECT: </span>
+                    <span>wordwordword</span>
+                </div>
+                <!--number of questions answered in fraction location-->
+                <div class="col s6" id="completedFraction">
+                    <h4># out of 5</h4>
+                </div>
+            </nav>
 
+
+        <!--main interactable area for user: question and answer list-->
+        <main>
+            <!--the current question will be found here-->
+            <div id="questionContainer">
+                <h5 class="question">how many?</h5>
+            </div>
+
+            <!--seperation of question and following answer inputs-->
+            <!--<div class="divider"></div>-->
+            <div id="seperatorHolder">
+                <br><hr><br>
+            </div>
+
+            <!--container for the four possible answers to given question-->
+            <section>
+                <!--option 1 container-->
+                <div class="answerOpts" id="answer-1">
+                    sk  oisfoigjesif
+                </div>
+                <!--option 2 container-->
+                <div class="answerOpts" id="answer-2">
+                    lr wofg wgrg  efwefwgwif
+                </div>
+                <!--option 3 container-->
+                <div class="answerOpts" id="answer-3">
+                     wfh wfai oe fjsrof  wfw
+                </div>
+                <!--option 4 container-->
+                <div class="answerOpts" id="answer-4">
+                    suicdBvwiohwrufhEF HEUFH EUF HE UHFEFHQ fwhef h
+                </div>
+            </section>
+
+        </main>
 
     </body>
 </html>
