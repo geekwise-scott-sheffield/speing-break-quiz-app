@@ -2,10 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Quiz App Template: v0.5</title>
+        <title>Question 1: v0.5</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-        <script src="js/script.js"></script>
     </head>
     <body>
         <!--statistics section, non interactive with user-->
@@ -13,21 +12,21 @@
             <!--subject the user is being questioned on-->
             <div class="col s5" id="subject">
                 <span>SUBJECT: </span>
-                <span>Getting Familiar</span>
+                <span>preparation & spelling</span>
             </div>
 
             <!--Container that will hold the "next question" button after an answer is clicked-->
             <div class="col s2" id="nextQuestionContainer">
-                <h5 id="hidePlaceHolder">i'll go away soon!</h5>
+                <h5 id="hidePlaceHolder">answer please</h5>
                 <!--initially hidden "next" button-->
-                <a href="question1.html">
-                    <button class=" hoverable toggle-hide" id="nextQ">to the next one!</button>
+                <a href="question2.html">
+                    <button class=" hoverable toggle-hide" id="nextQ">next question</button>
                 </a>
             </div>
 
             <!--number of questions answered in fraction location-->
             <div class="col s5" id="completedFraction">
-                <h4> <b id="number">Tutorial</b> out of 5</h4>
+                <h4> <b id="number">1</b> out of 5</h4>
             </div>
         </nav>
 
@@ -37,7 +36,7 @@
 
             <!--the current question will be found here-->
             <div id="questionContainer">
-                <h5 class="question">Click an Option to Move On</h5>
+                <h5 class="question">how many?</h5>
             </div>
 
             <!--seperation of question and following answer inputs-->
@@ -48,12 +47,12 @@
             <!--container for first two of four possible answers to given question-->
             <section class="row">
                 <!--option 1 container-->
-                <div class="col s4 offset-s2  left answerOpts" id="answer-1">
+                <div class="col s4 offset-s2  left answerOpts">
                     <p>option 1</p>
-                    <button onclick="showNext()" class="hoverable button">click me!!</button>
+                    <button id="q1Correct" onclick="showNext(); correctAnswer1()" class="hoverable button">click me!!</button>
                 </div>
                 <!--option 2 container-->
-                <div class="col s4 pull-s1 right answerOpts" id="answer-2">
+                <div class="col s4 pull-s1 right answerOpts">
                     <p>option 2</p>
                     <button onclick="showNext()" class="hoverable button">click me!!</button>
                 </div>
@@ -62,12 +61,12 @@
             <!--container for last two of four possible answers to given question-->
             <section class="row">
                 <!--option 3 container-->
-                <div class="col s4 offset-s1 left answerOpts" id="answer-3">
+                <div class="col s4 offset-s1 left answerOpts">
                     <p>option 3</p>
                     <button onclick="showNext()" class="hoverable button">click me!!</button>
                 </div>
                 <!--option 4 container-->
-                <div class="col s4 pull-s2 right answerOpts" id="answer-4">
+                <div class="col s4 pull-s2 right answerOpts">
                     <p>option 4</p>
                     <button onclick="showNext()" class="hoverable button">click me!!</button>
                 </div>
@@ -76,4 +75,5 @@
         </main>
 
     </body>
+    <script src="js/script.js"></script>
 </html>
