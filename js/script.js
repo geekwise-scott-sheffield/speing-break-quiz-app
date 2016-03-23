@@ -1,7 +1,28 @@
-var over9000 = "What TV superstar was trolled with the meme \"over 9000\"?";
-var leroy = "What classic MMO RPG was Leroy Jenkins\' playing when he coined his catchphrase?";
-var tBait = "Which YouTube account is believed to be the original meta Troll aka troll bait?";
-var homestuck = "Trolls in the Popular web comic Homestuck can be identified by their \"candy cane\" horns and their _____ colored skin.";
-var boxxy = "Which now infamous comment oriented website DDoS attacked itself in a flame war over the YouTube sensation Boxxy?";
+var qstn1_btn = document.querySelector("#q1Correct");
+var qstn2_btn = document.querySelector("#q2Correct");
+var qstn3_btn = document.querySelector("#q3Correct");
+var qstn4_btn = document.querySelector("#q4Correct");
+var qstn5_btn = document.querySelector("#q5Correct");
 
-var question = [over9000, leroy, tBait, homestuck, boxxy];
+
+function showNext(){
+    document.querySelector("#hidePlaceHolder").style.display = "none";
+    document.querySelector("#nextQ").style.display = "block";
+}
+
+
+function correctAnswer1(){
+    qstn1_btn.style.backgroundColor = "green";
+}
+function correctAnswer2(){
+    qstn2_btn.style.backgroundColor= "green";
+}
+function correctAnswer3(){
+    qstn3_btn.style.backgroundColor= "green";
+}
+function correctAnswer4(){
+    qstn4_btn.style.backgroundColor= "green";
+}
+function correctAnswer5(){
+    qstn5_btn.style.backgroundColor= "green";
+}
