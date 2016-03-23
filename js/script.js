@@ -4,6 +4,7 @@ var qstn3_btn = document.querySelector("#q3Correct");
 var qstn4_btn = document.querySelector("#q4Correct");
 var qstn5_btn = document.querySelector("#q5Correct");
 
+var correct = document.querySelectorAll(".answerOpts");
 var wrong = document.querySelectorAll(".answerOpts");
 
 function showNext(){
@@ -28,8 +29,14 @@ function correctAnswer5(){
     qstn5_btn.style.backgroundColor= "green";
 }
 
-function wrongChoice(){
+function indexChoiceExample(){
+    correct[0].style.backgroundColor = "limegreen";
+    correct[0].textContent = "right answer";
+
     wrong[1].style.backgroundColor = "crimson";
+    wrong[1].textContent = "wrong answer";
     wrong[2].style.backgroundColor = "crimson";
+    wrong[2].textContent = "wrong answer";
     wrong[3].style.backgroundColor = "crimson";
+    wrong[3].textContent = "wrong answer";
 }
