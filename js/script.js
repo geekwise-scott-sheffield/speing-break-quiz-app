@@ -1,27 +1,6 @@
-//var qstn1_btn = document.querySelector("#q1Correct");
-//var qstn2_btn = document.querySelector("#q2Correct");
-//var qstn3_btn = document.querySelector("#q3Correct");
-//var qstn4_btn = document.querySelector("#q4Correct");
-//var qstn5_btn = document.querySelector("#q5Correct");
-
 var correct = document.querySelectorAll(".answerOpts");
 var wrong = document.querySelectorAll(".answerOpts");
 
-//function correctAnswer1(){
-//    qstn1_btn.style.backgroundColor = "green";
-//}
-//function correctAnswer2(){
-//    qstn2_btn.style.backgroundColor= "green";
-//}
-//function correctAnswer3(){
-//    qstn3_btn.style.backgroundColor= "green";
-//}
-//function correctAnswer4(){
-//    qstn4_btn.style.backgroundColor= "green";
-//}
-//function correctAnswer5(){
-//    qstn5_btn.style.backgroundColor= "green";
-//}
 
 function indexChoiceExample(){
     correct[0].style.backgroundColor = "limegreen";
@@ -46,23 +25,43 @@ function wrongAnswer(){
     document.querySelector("#nextQ").style.display = "none";
     document.querySelector("#wrongAnswer").style.display = "block";
 }
+function rightAnswer(){
+    document.querySelector("#hidePlaceHolder").style.display = "none";
+    document.querySelector("#wrongAnswer").style.display = "none";
+    document.querySelector("#nextQ").style.display = "block";
+}
 
+//targets the possible answer buttons in html
 var yes = document.querySelectorAll(".answerOpts");
 var no = document.querySelectorAll(".answerOpts");
 
 function rightAnswer1(){
-    document.querySelector("#hidePlaceHolder").style.display = "none";
-    document.querySelector("#wrongAnswer").style.display = "none";
-    document.querySelector("#nextQ").style.display = "block";
-
     yes[0].style.backgroundColor = "limegreen";
     no[1].style.backgroundColor = "crimson";
     no[2].style.backgroundColor = "crimson";
     no[3].style.backgroundColor = "crimson";
 }
-
-
-
-
-
-//make a wrong answer function that will display a button link that leads to the "fail.html" page
+function rightAnswer2(){
+    yes[2].style.backgroundColor = "limegreen";
+    no[0].style.backgroundColor = "crimson";
+    no[1].style.backgroundColor = "crimson";
+    no[3].style.backgroundColor = "crimson";
+}
+function rightAnswer3(){
+    yes[1].style.backgroundColor = "limegreen";
+    no[0].style.backgroundColor = "crimson";
+    no[2].style.backgroundColor = "crimson";
+    no[3].style.backgroundColor = "crimson";
+}
+function rightAnswer4(){
+    yes[0].style.backgroundColor = "limegreen";
+    no[1].style.backgroundColor = "crimson";
+    no[2].style.backgroundColor = "crimson";
+    no[3].style.backgroundColor = "crimson";
+}
+function rightAnswer5(){
+    yes[3].style.backgroundColor = "limegreen";
+    no[0].style.backgroundColor = "crimson";
+    no[1].style.backgroundColor = "crimson";
+    no[2].style.backgroundColor = "crimson";
+}

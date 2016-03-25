@@ -19,9 +19,15 @@
             <!--Container that will hold the "next question" button after an answer is clicked-->
             <div class="col s2" id="nextQuestionContainer">
                 <h5 id="hidePlaceHolder">answer please</h5>
-                <!--initially hidden "next" button-->
+
+                <!--initially hidden correct answer button-->
                 <a href="stat.html">
                     <button class=" hoverable toggle-hide" id="nextQ">next question</button>
+                </a>
+
+                <!--wrongAnswer button-->
+                <a href="fail.html">
+                    <button class="hoverable toggle-hide" id="wrongAnswer">next question</button>
                 </a>
             </div>
 
@@ -50,12 +56,12 @@
                 <!--option 1 container-->
                 <div class="col s4 offset-s2  left answerContainer">
                     <p>option 1</p>
-                    <button onclick="showNext()" class="hoverable button">click me!!</button>
+                    <button onclick="wrongAnswer()" class="hoverable button answerOpts">click me!!</button>
                 </div>
                 <!--option 2 container-->
                 <div class="col s4 pull-s1 right answerContainer">
                     <p>option 2</p>
-                    <button onclick="showNext()" class="hoverable button">click me!!</button>
+                    <button onclick="wrongAnswer()" class="hoverable button answerOpts">click me!!</button>
                 </div>
             </section>
 
@@ -64,12 +70,12 @@
                 <!--option 3 container-->
                 <div class="col s4 offset-s1 left answerContainer">
                     <p>option 3</p>
-                    <button onclick="showNext()" class="hoverable button">click me!!</button>
+                    <button onclick="wrongAnswer()" class="hoverable button answerOpts">click me!!</button>
                 </div>
                 <!--option 4 container-->
                 <div class="col s4 pull-s2 right answerContainer">
                     <p>option 4</p>
-                    <button id="q5Correct" onclick="showNext(); correctAnswer5()" class="hoverable button">click me!!</button>
+                    <button  onclick="rightAnswer(); rightAnswer5()" class="hoverable button answerOpts">click me!!</button>
                 </div>
             </section>
 

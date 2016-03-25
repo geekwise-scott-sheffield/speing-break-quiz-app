@@ -18,10 +18,12 @@
             <!--Container that will hold the "next question" button after an answer is clicked-->
             <div class="col s2" id="nextQuestionContainer">
                 <h5 id="hidePlaceHolder">answer please</h5>
+
                 <!--initially hidden correct answer button-->
                 <a href="question2.html">
                     <button class=" hoverable toggle-hide" id="nextQ">next question</button>
                 </a>
+
                 <!--wrongAnswer button-->
                 <a href="fail.html">
                     <button class="hoverable toggle-hide" id="wrongAnswer">next question</button>
@@ -54,7 +56,7 @@
                 <!--option 1 container-->
                 <div class="col s4 offset-s2 left   answerContainer">
                     <p>option 1</p>
-                    <button onclick="rightAnswer1()" class="hoverable button answerOpts">click me!!</button>
+                    <button onclick="rightAnswer(); rightAnswer1()" class="hoverable button answerOpts">click me!!</button>
                 </div>
                 <!--option 2 container-->
                 <div class="col s4 pull-s1 right   answerContainer">
