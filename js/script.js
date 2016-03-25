@@ -17,8 +17,9 @@ function showNext(){
     document.querySelector("#hidePlaceHolder").style.display = "none";
     document.querySelector("#nextQ").style.display = "block";
 }
-
+/////////////////////////////////////////////////////////////////////////////////////
 //testing area and index example all above, code below is for seporate question pages
+/////////////////////////////////////////////////////////////////////////////////////
 
 function wrongAnswer(){
     document.querySelector("#hidePlaceHolder").style.display = "none";
@@ -65,3 +66,5 @@ function rightAnswer5(){
     no[1].style.backgroundColor = "crimson";
     no[2].style.backgroundColor = "crimson";
 }
+
+
