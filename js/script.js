@@ -17,6 +17,14 @@ function showNext(){
     document.querySelector("#hidePlaceHolder").style.display = "none";
     document.querySelector("#nextQ").style.display = "block";
 }
+
+
+var questionArray = ["question5/7", "question2", "question3", "question4", "question5" ];
+
+//document.querySelector("#hidePlaceHolder").textContent = "questionArray[0]";
+//document.querySelector("#hidePlaceHolder").textContent = questionArray[0];
+
+
 /////////////////////////////////////////////////////////////////////////////////////
 //testing area and index example all above, code below is for seporate question pages
 /////////////////////////////////////////////////////////////////////////////////////
