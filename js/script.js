@@ -1,28 +1,67 @@
-var qstn1_btn = document.querySelector("#q1Correct");
-var qstn2_btn = document.querySelector("#q2Correct");
-var qstn3_btn = document.querySelector("#q3Correct");
-var qstn4_btn = document.querySelector("#q4Correct");
-var qstn5_btn = document.querySelector("#q5Correct");
+var correct = document.querySelectorAll(".answerOpts");
+var wrong = document.querySelectorAll(".answerOpts");
 
+
+function indexChoiceExample(){
+    correct[0].style.backgroundColor = "limegreen";
+    correct[0].textContent = "right answer";
+    wrong[1].style.backgroundColor = "crimson";
+    wrong[1].textContent = "wrong answer";
+    wrong[2].style.backgroundColor = "crimson";
+    wrong[2].textContent = "wrong answer";
+    wrong[3].style.backgroundColor = "crimson";
+    wrong[3].textContent = "wrong answer";
+}
 
 function showNext(){
     document.querySelector("#hidePlaceHolder").style.display = "none";
     document.querySelector("#nextQ").style.display = "block";
 }
 
+//testing area and index example all above, code below is for seporate question pages
 
-function correctAnswer1(){
-    qstn1_btn.style.backgroundColor = "green";
+function wrongAnswer(){
+    document.querySelector("#hidePlaceHolder").style.display = "none";
+    document.querySelector("#nextQ").style.display = "none";
+    document.querySelector("#wrongAnswer").style.display = "block";
 }
-function correctAnswer2(){
-    qstn2_btn.style.backgroundColor= "green";
+function rightAnswer(){
+    document.querySelector("#hidePlaceHolder").style.display = "none";
+    document.querySelector("#wrongAnswer").style.display = "none";
+    document.querySelector("#nextQ").style.display = "block";
 }
-function correctAnswer3(){
-    qstn3_btn.style.backgroundColor= "green";
+
+//targets the possible answer buttons in html
+var yes = document.querySelectorAll(".answerOpts");
+var no = document.querySelectorAll(".answerOpts");
+
+function rightAnswer1(){
+    yes[0].style.backgroundColor = "limegreen";
+    no[1].style.backgroundColor = "crimson";
+    no[2].style.backgroundColor = "crimson";
+    no[3].style.backgroundColor = "crimson";
 }
-function correctAnswer4(){
-    qstn4_btn.style.backgroundColor= "green";
+function rightAnswer2(){
+    yes[2].style.backgroundColor = "limegreen";
+    no[0].style.backgroundColor = "crimson";
+    no[1].style.backgroundColor = "crimson";
+    no[3].style.backgroundColor = "crimson";
 }
-function correctAnswer5(){
-    qstn5_btn.style.backgroundColor= "green";
+function rightAnswer3(){
+    yes[1].style.backgroundColor = "limegreen";
+    no[0].style.backgroundColor = "crimson";
+    no[2].style.backgroundColor = "crimson";
+    no[3].style.backgroundColor = "crimson";
+}
+function rightAnswer4(){
+    yes[0].style.backgroundColor = "limegreen";
+    no[1].style.backgroundColor = "crimson";
+    no[2].style.backgroundColor = "crimson";
+    no[3].style.backgroundColor = "crimson";
+}
+function rightAnswer5(){
+    yes[3].style.backgroundColor = "limegreen";
+    no[0].style.backgroundColor = "crimson";
+    no[1].style.backgroundColor = "crimson";
+    no[2].style.backgroundColor = "crimson";
 }

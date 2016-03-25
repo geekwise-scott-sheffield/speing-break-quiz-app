@@ -25,6 +25,15 @@ html,body{
     width: 9rem;
     display: none;
 }
+#wrongAnswer{
+    float: none;
+    margin: auto;
+
+    background-color: #5cb85c;
+    height: 4.2rem;
+    width: 9rem;
+    display: none;
+}
 
 #completedFraction{
     text-align: center;
@@ -39,13 +48,18 @@ text-align: center;
 }
 
 
-.answerOpts{
+.answerContainer{
     text-align: center;
 }
 
 .button{
     height: 10rem;
     width: 20rem;
+}
+
+
+.failMessage{
+    text-align: center;
 }
 
 
