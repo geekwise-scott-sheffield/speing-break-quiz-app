@@ -13,12 +13,10 @@
 //    wrong[3].textContent = "wrong answer";
 //}
 //
-//function showNext(){
-//    document.querySelector("#hidePlaceHolder").style.display = "none";
-//    document.querySelector("#nextQ").style.display = "block";
-//}
-
-
+function showNext(){
+    document.querySelector("#hidePlaceHolder").style.display = "none";
+    document.querySelector("#nextQ").style.display = "block";
+}
 //var questionArray = ["question5/7", "question2", "question3", "question4", "question5" ];
 //document.querySelector("#hidePlaceHolder").textContent = "questionArray[0]";
 //document.querySelector("#hidePlaceHolder").textContent = questionArray[0];
