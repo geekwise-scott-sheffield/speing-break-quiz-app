@@ -25,15 +25,6 @@ html,body{
     width: 9rem;
     display: none;
 }
-#wrongAnswer{
-    float: none;
-    margin: auto;
-
-    background-color: #5cb85c;
-    height: 4.2rem;
-    width: 9rem;
-    display: none;
-}
 
 #completedFraction{
     text-align: center;
@@ -59,11 +50,6 @@ h4{
 }
 
 
-.failMessage{
-    text-align: center;
-}
-
-
 footer{
     width: 100%;
     height: 15rem;
@@ -80,3 +66,28 @@ a{
     text-align: center;
     color: white;
 }
+
+/*popup styling*/
+.popup{
+    display: none;
+}
+.popupPosition{
+    position: fixed;
+    top: 0;
+    left: 0;
+    /*background-color: rgba(250,250,250, 0.2);*/
+    background-color: transparent;
+    width: 100%;
+    height: 20%;
+}
+.popupWrapper{
+    width: 50rem;
+    margin: auto;
+    text-align: center;
+}
+.popupContainer{
+    background-color: aliceblue;
+    margin: 4rem auto;
+    text-align: center;
+}
+
