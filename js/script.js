@@ -44,16 +44,9 @@ var quizArray = [
 var answerOptions = document.querySelectorAll(".answerOpts");
 
 
-//function is run if user selects wrong answer
-//function wrongAnswer(){
-//    document.querySelector("#hidePlaceHolder").style.display = "none";
-//    document.querySelector("#nextQ").style.display = "none";
-//    document.querySelector("#wrongAnswer").style.display = "block";
-//}
 //function is run if user selects right answer
 function rightAnswer(){
     document.querySelector("#hidePlaceHolder").style.display = "none";
-    //document.querySelector("#wrongAnswer").style.display = "none";
     document.querySelector("#nextQ").style.display = "block";
 }
 
