@@ -58,8 +58,7 @@ function rightAnswer(){
 }
 
 function popup(){
-    document.querySelector("#popup").style.display = "block";
-
+    document.querySelector(".popup").style.display = "block";
     answerOptions[0].disabled = true;
     answerOptions[1].disabled = true;
     answerOptions[2].disabled = true;
@@ -76,35 +75,19 @@ function question1(){
 //unique question and answer set for question 2
 function question2(){
     document.querySelector("#question2").textContent = quizArray[1];
-    answerOptions[0].disabled = false;
-    answerOptions[1].disabled = false;
-    answerOptions[2].disabled = false;
-    answerOptions[3].disabled = false;
 }
 
 //unique question and answer set for question 3
 function question3(){
     document.querySelector("#question3").textContent = quizArray[2];
-    answerOptions[0].disabled = false;
-    answerOptions[1].disabled = false;
-    answerOptions[2].disabled = false;
-    answerOptions[3].disabled = false;
 }
 
 //unique question and answer set for question 4
 function question4(){
     document.querySelector("#question4").textContent = quizArray[3];
-    answerOptions[0].disabled = false;
-    answerOptions[1].disabled = false;
-    answerOptions[2].disabled = false;
-    answerOptions[3].disabled = false;
 }
 
 //unique question and answer set for question 5
 function question5(){
     document.querySelector("#question5").textContent = quizArray[4];
-    answerOptions[0].disabled = false;
-    answerOptions[1].disabled = false;
-    answerOptions[2].disabled = false;
-    answerOptions[3].disabled = false;
 }
