@@ -1,37 +1,12 @@
-//var correct = document.querySelectorAll(".answerOpts");
-//var wrong = document.querySelectorAll(".answerOpts");
-//
-//
-//function indexChoiceExample(){
-//    correct[0].style.backgroundColor = "limegreen";
-//    correct[0].textContent = "right answer";
-//    wrong[1].style.backgroundColor = "crimson";
-//    wrong[1].textContent = "wrong answer";
-//    wrong[2].style.backgroundColor = "crimson";
-//    wrong[2].textContent = "wrong answer";
-//    wrong[3].style.backgroundColor = "crimson";
-//    wrong[3].textContent = "wrong answer";
-//}
-//
+/////////////////////////////////////////////////////////////////////////////////////
+//testing area and index example all above, code below is for seporate question pages
+/////////////////////////////////////////////////////////////////////////////////////
+
+
 function showNext(){
     document.querySelector("#hidePlaceHolder").style.display = "none";
     document.querySelector("#nextQ").style.display = "block";
 }
-//var questionArray = ["question5/7", "question2", "question3", "question4", "question5" ];
-//document.querySelector("#hidePlaceHolder").textContent = "questionArray[0]";
-//document.querySelector("#hidePlaceHolder").textContent = questionArray[0];
-
-
-
-//function popup(){
-//    document.querySelector("#popup").style.display = "block"
-//}
-
-
-
-/////////////////////////////////////////////////////////////////////////////////////
-//testing area and index example all above, code below is for seporate question pages
-/////////////////////////////////////////////////////////////////////////////////////
 
 //array for quiz questions
 var quizArray = [
