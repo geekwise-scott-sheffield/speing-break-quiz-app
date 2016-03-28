@@ -9,29 +9,28 @@
     </head>
 
     <body>
+        <div id="statContainer">
 
-    <!--container for subject and score-->
-    <section class="row">
-        <!--option 1 container-->
-        <div class="col s4 offset-s1  left answerOpts" id="statPage-subject">
-            <p>SUBJECT</p>
-            <button class="hoverable button">Memes & Meme History</button>
-        </div>
-        <!--option 2 container-->
-        <div class="col s4 pull-s1 right answerOpts" id="statPage-score">
-            <p>SCORE</p>
-            <button class="hoverable button"><b>5</b> out of 5</button>
-        </div>
-    </section>
+            <div class="row" id="resultsSubject">
+                <h3 class="col s3 left ">Subject...</h3>
+                <h3 class="col s1 left offset-s2"> ...</h3>
+                <h4 class="col s4 right currentAlign">Memes & Meme History</h4>
+            </div>
 
-    <!--container for last two of four possible answers to given question-->
-    <section class="row">
-        <!--option 3 container-->
-        <div class="col s4 offset-s4 left answerOpts" id="statPage-pass">
-            <p>PASS OR FAIL</p>
-            <button class="hoverable button">pass!</button>
+            <div class="row" id="resultsScore">
+                <h3 class="col s2 left">Score...</h3>
+                <h3 class="col s1 left offset-s3"> ...</h3>
+                <h4 class="col s4 right currentAlign">Perfect 5 / 5</h4>
+            </div>
+
+            <div class="row" id="resultsCertification">
+                <h3 class="col s4 left">Certification...</h3>
+                <h3 class="col s1 left offset-s1"> ...</h3>
+                <h4 class="col s4 right currentAlign">Offical Memeologist</h4>
+            </div>
+
         </div>
-    </section>
+
 
     <!--bottom area that takes the user back to the beginning of the quiz-->
     <footer class="row">
