@@ -80,3 +80,25 @@ a{
     text-align: center;
     color: white;
 }
+
+/*popup styling*/
+.popupPosition{
+    position: fixed;
+    top: 0;
+    left: 0;
+    /*background-color: rgba(0,0,0, 0.3);*/
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+.popupWrapper{
+    width: 50rem;
+    margin: 7rem auto;
+    text-align: left;
+}
+.popupContainer{
+    background-color: aliceblue;
+    margin: 4rem auto;
+    text-align: center;
+}
+
