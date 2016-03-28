@@ -22,6 +22,13 @@ function showNext(){
 //document.querySelector("#hidePlaceHolder").textContent = questionArray[0];
 
 
+
+function popup(){
+    document.querySelector("#popup").style.display = "block"
+}
+
+
+
 /////////////////////////////////////////////////////////////////////////////////////
 //testing area and index example all above, code below is for seporate question pages
 /////////////////////////////////////////////////////////////////////////////////////

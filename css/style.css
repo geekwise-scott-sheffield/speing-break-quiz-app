@@ -82,19 +82,22 @@ a{
 }
 
 /*popup styling*/
+#popup{
+    display: none;
+}
 .popupPosition{
     position: fixed;
     top: 0;
     left: 0;
-    /*background-color: rgba(0,0,0, 0.3);*/
-    background-color: transparent;
+    background-color: rgba(250,250,250, 0.3);
+    /*background-color: transparent;*/
     width: 100%;
     height: 100%;
 }
 .popupWrapper{
     width: 50rem;
-    margin: 7rem auto;
-    text-align: left;
+    margin: auto;
+    text-align: center;
 }
 .popupContainer{
     background-color: aliceblue;
