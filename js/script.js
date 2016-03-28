@@ -60,27 +60,41 @@ function popup(){
 
 
 //unique question and answer set for question 1
-function question1(){
-    document.querySelector("#question1").textContent = quizArray[0];
+if(window.location.pathname === '/spring-break-quiz-app/question1.html'){
+    function question1(){
+        document.querySelector("#question1").textContent = quizArray[0];
+    }
+    window.onload = question1();
 }
 
-
 //unique question and answer set for question 2
-function question2(){
-    document.querySelector("#question2").textContent = quizArray[1];
+if(window.location.pathname === '/spring-break-quiz-app/question2.html'){
+    function question2(){
+        document.querySelector("#question2").textContent = quizArray[1];
+    }
+    window.onload = question2();
 }
 
 //unique question and answer set for question 3
-function question3(){
-    document.querySelector("#question3").textContent = quizArray[2];
+if(window.location.pathname === '/spring-break-quiz-app/question3.html'){
+    function question3(){
+        document.querySelector("#question3").textContent = quizArray[2];
+    }
+    window.onload = question3();
 }
 
 //unique question and answer set for question 4
-function question4(){
-    document.querySelector("#question4").textContent = quizArray[3];
+if(window.location.pathname === '/spring-break-quiz-app/question4.html'){
+    function question4(){
+        document.querySelector("#question4").textContent = quizArray[3];
+    }
+    window.onload = question4();
 }
 
 //unique question and answer set for question 5
-function question5(){
-    document.querySelector("#question5").textContent = quizArray[4];
+if(window.location.pathname === '/spring-break-quiz-app/question5.html') {
+    function question5() {
+        document.querySelector("#question5").textContent = quizArray[4];
+    }
+    window.onload = question5();
 }
