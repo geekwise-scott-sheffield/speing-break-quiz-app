@@ -23,9 +23,9 @@ function showNext(){
 
 
 
-function popup(){
-    document.querySelector("#popup").style.display = "block"
-}
+//function popup(){
+//    document.querySelector("#popup").style.display = "block"
+//}
 
 
 
@@ -45,26 +45,33 @@ var answerOptions = document.querySelectorAll(".answerOpts");
 
 
 //function is run if user selects wrong answer
-function wrongAnswer(){
-    document.querySelector("#hidePlaceHolder").style.display = "none";
-    document.querySelector("#nextQ").style.display = "none";
-    document.querySelector("#wrongAnswer").style.display = "block";
-}
+//function wrongAnswer(){
+//    document.querySelector("#hidePlaceHolder").style.display = "none";
+//    document.querySelector("#nextQ").style.display = "none";
+//    document.querySelector("#wrongAnswer").style.display = "block";
+//}
 //function is run if user selects right answer
 function rightAnswer(){
     document.querySelector("#hidePlaceHolder").style.display = "none";
-    document.querySelector("#wrongAnswer").style.display = "none";
+    //document.querySelector("#wrongAnswer").style.display = "none";
     document.querySelector("#nextQ").style.display = "block";
 }
+
+function popup(){
+    document.querySelector("#popup").style.display = "block";
+
+    answerOptions[0].disabled = true;
+    answerOptions[1].disabled = true;
+    answerOptions[2].disabled = true;
+    answerOptions[3].disabled = true;
+}
+
 
 //unique question and answer set for question 1
 function question1(){
     document.querySelector("#question1").textContent = quizArray[0];
-    answerOptions[0].disabled = false;
-    answerOptions[1].disabled = false;
-    answerOptions[2].disabled = false;
-    answerOptions[3].disabled = false;
 }
+
 
 //unique question and answer set for question 2
 function question2(){
