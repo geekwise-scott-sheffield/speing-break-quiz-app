@@ -20,7 +20,7 @@
             <div class="row" id="resultsScore">
                 <h3 class="col s2 left">Score...</h3>
                 <h3 class="col s1 left offset-s3"> ...</h3>
-                <h4 class="col s4 right currentAlign">Perfect 5 / 5</h4>
+                <h4 class="col s4 right currentAlign"><b id="quizScore"> #</b> / 5</h4>
             </div>
 
             <div class="row" id="resultsCertification">
@@ -35,7 +35,7 @@
     <!--bottom area that takes the user back to the beginning of the quiz-->
     <footer class="row">
         <div id="footerContent" class="col s12">
-            <a href="index.html"><h1>return to quiz start</h1></a>
+            <a onclick="localStorage.clear()" href="index.html"><h1>return to quiz start</h1></a>
         </div>
     </footer>
 
