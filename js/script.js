@@ -1,12 +1,39 @@
 /////////////////////////////////////////////////////////////////////////////////////
 //testing area and index example all above, code below is for seporate question pages
 /////////////////////////////////////////////////////////////////////////////////////
-
-
 function showNext(){
     document.querySelector("#hidePlaceHolder").style.display = "none";
     document.querySelector("#nextQ").style.display = "block";
 }
+
+function totalScore(){
+    var score = localStorage.getItem("count");
+    if(score == null || score == "null"){
+        var count = 0;
+    }else{
+        count = parseInt(score);
+    }
+    count++;
+    //testing purposes; ignore
+    //alert(count);
+    localStorage.setItem("count", count);
+
+    return count;
+}
+//not implemented, use for developer purposes only
+function viewScore(){
+    var score = localStorage.getItem("count");
+    if(score == null || score == "null"){
+        var count = 0;
+    }else{
+        count = parseInt(score);
+    }
+    localStorage.setItem("count", count);
+
+    return count;
+}
+
+
 
 //array for quiz questions
 var quizArray = [
@@ -14,24 +41,30 @@ var quizArray = [
     "What site was the now famous Leroy Jenkins World of Warcraft video first uploaded to?",
     "Which YouTuber was among the first to popularize internet phenomenon known as trollbait?",
     "Trolls, in the internet webcomic Homestuck, are easily identified by their candy cane horns and ___ colored skin",
-    "the comment based sit ___ resorted to DDOS attacks in a flame war over the internet personality Boxxy"
+    "the comment based site ___ resorted to DDOS attacks in a flame war over the internet personality Boxxy"
 ];
 var answerOptions = document.querySelectorAll(".answerOpts");
 
-
-//function is run if user selects right answer
-function rightAnswer(){
+//function is ran if user selects wrong answer
+function wrongAnswer(){
     document.querySelector("#hidePlaceHolder").style.display = "none";
     document.querySelector("#nextQ").style.display = "block";
 }
 
-function popup(){
-    document.querySelector(".popup").style.display = "block";
-    answerOptions[0].disabled = true;
-    answerOptions[1].disabled = true;
-    answerOptions[2].disabled = true;
-    answerOptions[3].disabled = true;
+//function is ran if user selects right answer
+function rightAnswer(){
+    document.querySelector("#hidePlaceHolder").style.display = "none";
+    document.querySelector("#nextQ").style.display = "block";
+    totalScore();
 }
+//
+//function popup(){
+//    document.querySelector(".popup").style.display = "block";
+//    answerOptions[0].disabled = true;
+//    answerOptions[1].disabled = true;
+//    answerOptions[2].disabled = true;
+//    answerOptions[3].disabled = true;
+//}
 
 
 //unique question and answer set for question 1
