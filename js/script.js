@@ -6,6 +6,7 @@ function showNext(){
     document.querySelector("#nextQ").style.display = "block";
 }
 
+
 function totalScore(){
     var score = localStorage.getItem("count");
     if(score == null || score == "null"){
@@ -106,3 +107,29 @@ if(window.location.pathname === '/spring-break-quiz-app/question5.html') {
     }
     window.onload = question5();
 }
+
+if(window.location.pathname === '/spring-break-quiz-app/stat.html'){
+
+    document.addEventListener("DOMContentLoaded", function(event){
+        if(localStorage["count"] === "1"){
+            document.querySelector("#quizScore").textContent = "1";
+        }
+        if(localStorage["count"] === "2"){
+            document.querySelector("#quizScore").textContent = "2";
+        }
+        if(localStorage["count"] === "3"){
+            document.querySelector("#quizScore").textContent = "3";
+        }
+        if(localStorage["count"] === "4"){
+            document.querySelector("#quizScore").textContent = "4";
+        }
+        if(localStorage["count"] === "5"){
+            document.querySelector("#quizScore").textContent = "5";
+        }
+        else if(localStorage["count"] > "5"){
+            document.querySelector("#quizScore").textContent = "too many points";
+        }
+
+    });
+}
+
