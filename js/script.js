@@ -113,21 +113,27 @@ if(window.location.pathname === '/spring-break-quiz-app/stat.html'){
     document.addEventListener("DOMContentLoaded", function(event){
         if(localStorage["count"] === "1"){
             document.querySelector("#quizScore").textContent = "1";
+            document.querySelector("#certification").textContent = "Lemming";
         }
         if(localStorage["count"] === "2"){
             document.querySelector("#quizScore").textContent = "2";
+            document.querySelector("#certification").textContent = "Pepe";
         }
         if(localStorage["count"] === "3"){
             document.querySelector("#quizScore").textContent = "3";
+            document.querySelector("#certification").textContent = "michael cera's mustache";
         }
         if(localStorage["count"] === "4"){
             document.querySelector("#quizScore").textContent = "4";
+            document.querySelector("#certification").textContent = "Mysterio's 619";
         }
         if(localStorage["count"] === "5"){
             document.querySelector("#quizScore").textContent = "5";
+            document.querySelector("#certification").textContent = "Official Memeologits";
         }
         else if(localStorage["count"] > "5"){
             document.querySelector("#quizScore").textContent = "too many points";
+            document.querySelector("#certification").textContent = "Hackerman";
         }
 
     });
