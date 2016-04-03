@@ -121,7 +121,7 @@ if(window.location.pathname === '/spring-break-quiz-app/stat.html'){
         }
         if(localStorage["count"] === "3"){
             document.querySelector("#quizScore").textContent = "3";
-            document.querySelector("#certification").textContent = "michael cera's mustache";
+            document.querySelector("#certification").textContent = "Michael Cera's Mustache";
         }
         if(localStorage["count"] === "4"){
             document.querySelector("#quizScore").textContent = "4";
