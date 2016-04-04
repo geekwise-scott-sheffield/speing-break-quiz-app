@@ -1,12 +1,14 @@
 /////////////////////////////////////////////////////////////////////////////////////
 //testing area and index example all above, code below is for seporate question pages
 /////////////////////////////////////////////////////////////////////////////////////
+
+//example code used in index only to avoid confusing later developers
 function showNext(){
     document.querySelector("#hidePlaceHolder").style.display = "none";
     document.querySelector("#nextQ").style.display = "block";
 }
 
-
+//point adding logic used when right answer is clicked
 function totalScore(){
     var score = localStorage.getItem("count");
     if(score == null || score == "null"){
@@ -21,7 +23,8 @@ function totalScore(){
 
     return count;
 }
-//not implemented, use for developer purposes only
+
+//NOT IMPLEMENTED, use for developer purposes only
 function viewScore(){
     var score = localStorage.getItem("count");
     if(score == null || score == "null"){
@@ -33,7 +36,6 @@ function viewScore(){
 
     return count;
 }
-
 
 
 //array for quiz questions
@@ -58,15 +60,6 @@ function rightAnswer(){
     document.querySelector("#nextQ").style.display = "block";
     totalScore();
 }
-//
-//function popup(){
-//    document.querySelector(".popup").style.display = "block";
-//    answerOptions[0].disabled = true;
-//    answerOptions[1].disabled = true;
-//    answerOptions[2].disabled = true;
-//    answerOptions[3].disabled = true;
-//}
-
 
 //unique question and answer set for question 1
 if(window.location.pathname === '/spring-break-quiz-app/question1.html'){
@@ -108,6 +101,8 @@ if(window.location.pathname === '/spring-break-quiz-app/question5.html') {
     window.onload = question5();
 }
 
+
+//result logic for the statistics page
 if(window.location.pathname === '/spring-break-quiz-app/stat.html'){
 
     document.addEventListener("DOMContentLoaded", function(event){
