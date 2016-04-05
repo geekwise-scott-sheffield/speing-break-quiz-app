@@ -46,7 +46,14 @@ var quizArray = [
     "Trolls, in the internet webcomic Homestuck, are easily identified by their candy cane horns and ___ colored skin",
     "the comment based site ___ resorted to DDOS attacks in a flame war over the internet personality Boxxy"
 ];
-var answerOptions = document.querySelectorAll(".answerOpts");
+
+//function runs once any option is clicked
+function answered(){
+    document.querySelectorAll(".answerOpts")[0].disabled = true;
+    document.querySelectorAll(".answerOpts")[1].disabled = true;
+    document.querySelectorAll(".answerOpts")[2].disabled = true;
+    document.querySelectorAll(".answerOpts")[3].disabled = true;
+}
 
 //function is ran if user selects wrong answer
 function wrongAnswer(){
